@@ -16,6 +16,7 @@ const MovieCard = ({title, description, posterURL, rating, link}) => {
                 onClick={() => navigate(`/card/${title}`,{state:{link:link, description:description}})}
                style={{ width: 300 , height:240}}
                 />}
+                onClick={() => navigate(`/card/${title}`,{state:{link:link, description:description}})}
             >
                 <Meta title={title} description={description} style={{   height:230}}/>
                 <span>{rating}</span>
